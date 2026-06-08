@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #0896cef3;
+    --primary-color: #004d6b;
     --second-color: #f4a261;
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
@@ -213,7 +213,7 @@ footer {
 .staff {
     display: flex;
     justify-content: space-around;
-    gap: 1 rem;
+    gap: 1rem;
     flex-wrap: wrap;
     text-align: center;
 }

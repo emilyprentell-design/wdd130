@@ -65,6 +65,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #3e3e3e;
+    color: #fff;
 }
 
 .socialmedia {
@@ -165,4 +167,153 @@ footer {
 .adventures figure img {
     width: 100%;
     padding: 1rem;
+}
+
+.contact-info,
+.contact-form,
+.staff {
+    margin: 2rem 16px;
+    padding: 1rem;
+    border: 2px solid var(--accent1-color);
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+    align-items: center;
+}
+
+.contact-info {
+    grid-column: 1/3;
+    justify-self: center;
+    line-height: 2;
+    border: none;
+}
+
+.contact-info > h2 {
+    background-color: unset;
+    padding: unset;
+    color: #000;
+    border: none;
+    box-shadow: none;
+}
+
+.map iframe {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    border: 2px solid var(--accent1-color);
+}
+
+.staff {
+    display: flex;
+    justify-content: space-around;
+    gap: 1 rem;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.staff h2 {
+    width: 100%;
+}
+
+.staff figure {
+    width: 280px;
+}
+
+.staff img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border: 2px solid var(--accent1-color);
+    border-radius: 15px;
+    background-color: #ddd;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    display: grid;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form label,
+legend {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid var(--accent1-color);
+    border-radius: 5px;
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.75rem;
+    padding: 1rem;
+    border: 2px solid var(--accent1-color);
+    border-radius: 8px;
+}
+
+legend {
+    color: var(--primary-color);
+    padding: 0 0.5rem;
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.newsletter input {
+    width: auto;
+}
+
+button[type="submit"] {
+    width: fit-content;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--accent1-color);
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 200px 1fr;
+    gap: 10px;
+}
+
+.radio-option {
+    display: grid;
+    grid-template-columns: 1.25rem auto;
+    gap: 1rem .5rem;
+    align-items: center;
+    gap: 8px;
+}
+
+.form-item {
+    display: grid;
+    grid-template-columns: max-content auto;
+    gap: 1.5rem 1rem;
+    align-items: center;
 }
